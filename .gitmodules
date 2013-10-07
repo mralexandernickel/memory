@@ -1,0 +1,21 @@
+[submodule "src/lib/bootstrap"]
+	path = src/lib/bootstrap
+	url = https://github.com/twbs/bootstrap.git
+[submodule "src/lib/font-awesome"]
+	path = src/lib/font-awesome
+	url = https://github.com/FortAwesome/Font-Awesome.git
+[submodule "src/lib/less-wallpaper"]
+	path = src/lib/less-wallpaper
+	url = https://github.com/mralexandernickel/less-wallpaper.git
+[submodule "src/lib/less-easing"]
+	path = src/lib/less-easing
+	url = https://github.com/mralexandernickel/less-easing.git
+[submodule "src/lib/less-transform"]
+	path = src/lib/less-transform
+	url = https://github.com/mralexandernickel/less-transform.git
+[submodule "src/lib/less-grayscale"]
+	path = src/lib/less-grayscale
+	url = https://github.com/mralexandernickel/less-grayscale.git
+[submodule "src/lib/mandrill-api"]
+	path = src/lib/mandrill-api
+	url = https://bitbucket.org/mailchimp/mandrill-api-js.git

@@ -1,0 +1,51 @@
+require "rake-pipeline-web-filters"
+require "rake-pipeline-web-filters/helpers"
+require "json"
+
+template_path = "public"
+src_path = "src"
+assets_path = "#{template_path}/assets"
+
+# compile and concat all LESS files...
+output "#{assets_path}/css"
+input "assets" do
+  match "less/application.less" do
+    less :paths => ["#{src_path}/lib/bootstrap/less","#{src_path}/lib/font-awesome/less","#{src_path}/lib/less-easing/less","#{src_path}/lib/less-transform/less","#{src_path}/lib/less-grayscale/less","#{src_path}/lib/less-wallpaper/less","#{src_path}/less"]
+      copy "application.css"
+      yui_css
+  end
+end
+
+# compile and concat all coffeescripts...
+output "#{assets_path}/js"
+input "#{src_path}" do
+  match "coffee/*.coffee" do
+    coffee_script
+    concat "application.js"
+  end
+end
+
+# build bootstrap.js...
+output "#{assets_path}/lib/bootstrap"
+input "#{src_path}/lib/bootstrap" do
+  match "js/*.js" do
+    concat ["js/transition.js","js/tooltip.js"], "bootstrap.js"
+    yui_javascript
+  end
+end
+
+# copy font-awesome fonts...
+output "#{assets_path}/font"
+input "#{src_path}/lib/font-awesome/font" do
+  match "fontawesome-webfont.*" do
+    copy
+  end
+end
+
+# copy mandrill API to assets
+output "#{assets_path}/lib/mandrill-api"
+input "#{src_path}/lib/mandrill-api" do
+  match "mandrill.min.js" do
+    copy
+  end
+end
