@@ -8,7 +8,7 @@ assets_path = "#{template_path}/assets"
 
 # compile and concat all LESS files...
 output "#{assets_path}/css"
-input "assets" do
+input "#{src_path}" do
   match "less/application.less" do
     less :paths => ["#{src_path}/lib/bootstrap/less","#{src_path}/lib/font-awesome/less","#{src_path}/lib/less-easing/less","#{src_path}/lib/less-transform/less","#{src_path}/lib/less-grayscale/less","#{src_path}/lib/less-wallpaper/less","#{src_path}/less"]
       copy "application.css"
