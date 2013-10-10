@@ -19,3 +19,6 @@
 [submodule "src/lib/mandrill-api"]
 	path = src/lib/mandrill-api
 	url = https://bitbucket.org/mailchimp/mandrill-api-js.git
+[submodule "src/lib/handlebars.js"]
+	path = src/lib/handlebars.js
+	url = https://github.com/wycats/handlebars.js.git
