@@ -19,3 +19,9 @@
 [submodule "src/lib/mandrill-api"]
 	path = src/lib/mandrill-api
 	url = https://bitbucket.org/mailchimp/mandrill-api-js.git
+[submodule "src/lib/polymer/polymer"]
+	path = src/lib/polymer/polymer
+	url = https://github.com/Polymer/polymer.git
+[submodule "src/lib/polymer/platform"]
+	path = src/lib/polymer/platform
+	url = https://github.com/Polymer/platform.git

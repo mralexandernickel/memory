@@ -49,3 +49,19 @@ input "#{src_path}/lib/mandrill-api" do
     copy
   end
 end
+
+# copy polymer to assets
+output "#{assets_path}/lib/polymer"
+input "#{src_path}/lib/polymer/polymer" do
+  match "*.js*" do
+    copy
+  end
+end
+
+# copy polymer-platform to assets
+output "#{assets_path}/lib/polymer"
+input "#{src_path}/lib/polymer/platform" do
+  match "*.js*" do
+    copy
+  end
+end
