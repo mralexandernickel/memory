@@ -1,0 +1,4 @@
+#/bin/bash
+cd ../public/assets
+echo 'CACHE MANIFEST' > ./cache.manifest
+find . -type f >> ./cache.manifest

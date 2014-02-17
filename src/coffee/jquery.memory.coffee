@@ -15,7 +15,7 @@ methods =
     # set options
     $.extend config, options
     
-    methods.dev_get_images()
+    methods.get_images()
   
   dev_get_images: ->
     images = [
