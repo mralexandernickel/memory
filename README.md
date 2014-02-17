@@ -1,6 +1,4 @@
-scratch
+kult.kom
 =======
 
-"from-scratch" starting point
-
-* needs a serverside script for recaptcha verification, depending on language
+Web Application for kult.kom
