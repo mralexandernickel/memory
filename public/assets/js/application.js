@@ -23,7 +23,7 @@
     init: function(options) {
       config.container = $(this);
       $.extend(config, options);
-      return methods.dev_get_images();
+      return methods.get_images();
     },
     dev_get_images: function() {
       var images;
