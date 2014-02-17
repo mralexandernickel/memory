@@ -39,6 +39,7 @@ CACHE MANIFEST
 ./img/strassenteppich.jpg
 ./js/application.js
 ./lib/bootstrap/bootstrap.min.js
+./lib/jquery/jquery.min.js
 ./lib/mandrill-api/mandrill.min.js
 ./lib/polymer/bower.json
 ./lib/polymer/platform.js
