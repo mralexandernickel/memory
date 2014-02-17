@@ -1,2 +1,4 @@
 $ ->
-  console.log "up and running" if console?
+  
+  # init the memory game
+  $(".deck").memory()

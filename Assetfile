@@ -16,6 +16,13 @@ input "#{src_path}" do
   end
 end
 
+# copy animate.css to assets
+input "#{src_path}/lib/animate.css" do
+  match "*.css" do
+    copy
+  end
+end
+
 # compile and concat all coffeescripts...
 output "#{assets_path}/js"
 input "#{src_path}" do
