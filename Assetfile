@@ -17,8 +17,8 @@ input "#{src_path}" do
 end
 
 # copy animate.css to assets
-input "#{src_path}/lib/animate.css" do
-  match "*.css" do
+input "#{src_path}/lib" do
+  match "/animate.css/*.css" do
     copy
   end
 end
