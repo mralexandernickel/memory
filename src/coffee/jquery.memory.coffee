@@ -50,11 +50,13 @@ methods =
         methods.play_card this
       config.container.append card
   
+  # playing a card
   play_card: (card) ->
     $(card).addClass "card-selected"
     if $(".card-selected").length == config.cards_needed
       methods.check_equality()
   
+  # check played cards for equality
   check_equality: ->
     cards = $(".card-selected")
     first_image = $(cards[0]).children("span.back").attr "style"
@@ -72,10 +74,12 @@ methods =
     else
       methods.reset_played_cards cards
   
+  # removing played and equal cards
   remove_played_cards: (cards) ->
     cards.addClass "animated rollOut"
     methods.reset_played_cards cards
   
+  # resetting played but not equal cards
   reset_played_cards: (cards) ->
     window.setTimeout ->
       cards.removeClass "card-selected"
