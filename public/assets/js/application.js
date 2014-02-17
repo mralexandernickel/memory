@@ -23,11 +23,11 @@
     init: function(options) {
       config.container = $(this);
       $.extend(config, options);
-      return methods.get_images();
+      return methods.dev_get_images();
     },
     dev_get_images: function() {
       var images;
-      images = ["http://lorempixel.com/80/80", "http://lorempixel.com/90/90", "http://lorempixel.com/100/100", "http://lorempixel.com/110/110", "http://lorempixel.com/120/120", "http://lorempixel.com/130/130", "http://lorempixel.com/140/140", "http://lorempixel.com/150/150", "http://lorempixel.com/160/160", "http://lorempixel.com/170/170"];
+      images = ["assets/card_images/card_01.jpg", "assets/card_images/card_02.jpg", "assets/card_images/card_03.jpg", "assets/card_images/card_04.jpg", "assets/card_images/card_05.jpg", "assets/card_images/card_06.jpg", "assets/card_images/card_07.jpg", "assets/card_images/card_08.jpg", "assets/card_images/card_09.jpg", "assets/card_images/card_10.jpg", "assets/card_images/card_11.jpg", "assets/card_images/card_12.jpg", "assets/card_images/card_13.jpg", "assets/card_images/card_14.jpg", "assets/card_images/card_15.jpg", "assets/card_images/card_16.jpg", "assets/card_images/card_17.jpg", "assets/card_images/card_18.jpg", "assets/card_images/card_19.jpg", "assets/card_images/card_20.jpg", "assets/card_images/card_21.jpg", "assets/card_images/card_23.jpg", "assets/card_images/card_24.jpg", "assets/card_images/card_25.jpg", "assets/card_images/card_26.jpg", "assets/card_images/card_28.jpg", "assets/card_images/card_31.jpg", "assets/card_images/card_32.jpg"];
       config.images = images.concat(images);
       config.images = methods.shuffle(config.images);
       return methods.build_deck();
